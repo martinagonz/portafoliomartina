@@ -1,0 +1,336 @@
+<!DOCTYPE html>               
+<html lang="es">   
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Portfolio</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    
+    <!-- Tu script personalizado -->                   
+    <script src="path/to/your/custom_script.js"></script>
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Yarndings+20+Charted&display=swap" rel="stylesheet">
+<body>
+    <!-- MENU ENCABEZADO -->
+    <div class="contenedor-header">
+        <header>
+            <div class="logo">
+                <a href="#"><img id="logoim" src="./assets/img/MG logo.png" alt=""></a>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#inicio" onclick="seleccionar()">INICIO</a></li>
+                    <li><a href="#sobremi" onclick="seleccionar()">SOBRE MI</a></li>
+                    <li><a href="#educacion" onclick="seleccionar()">EDUCACIÓN</a></li>
+                    <li><a href="#skills" onclick="seleccionar()">HABILIDADES</a></li>
+                    <li><a href="#portfolio" onclick="seleccionar()">PORTFOLIO</a></li>
+                    <li><a href="#contacto" onclick="seleccionar()">CONTACTO</a></li>
+                </ul>
+            </nav>
+            <div class="nav-responsive" onclick="mostrarOcultarMenu()">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </header>
+    </div>
+  
+
+ 
+<!-- SECCION INICIO -->
+<section id="inicio" class="inicio">
+    <div class="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./assets/img/P O R T A F O L I O.png" alt="Imagen 1">
+            </div>
+            <div class="carousel-item">
+                <img src="./assets/img/P O R T A F O L I O sla2.png" alt="Imagen 2">
+            </div>
+           
+            <!-- Agrega más items según sea necesario -->
+        </div>
+        <button class="carousel-control prev" onclick="moveCarousel(-1)">&#10094;</button>
+        <button class="carousel-control next" onclick="moveCarousel(1)">&#10095;</button>
+    </div>
+</section>
+
+
+
+
+    <!-- SECCION SOBRE MI -->
+    <section id="sobremi" class="sobremi">
+        <div class="contenido-seccion">
+            <!--<video autoplay muted 
+            loop id="video" src="./img/descarga(4).mp4" width="300" height="300"  ></video> -->
+            <img src="./assets/img/Diseño sin título.png" alt="fotoperfil" id="fotoperfil">
+            <div class="texto">
+                <h2 >¡Hola! Yo soy Martina
+                </h2>
+                <h2 class="tp" id="typewriter"></h2>
+                <p class="fs-5 text-body"></p>
+                <p>
+                    <span>¡Te cuento algo sobre mí!</span> 
+                    Soy una estudiante de ingeniería en informática de 21 años.
+                    Me destaco por ser una persona comprometida con mis metas,
+                    capaz de ofrecer un buen desempeño en diversos equipos de
+                    trabajo, utilizando mi creatividad para desarrollar nuevas ideas y
+                    mostrando empatía hacia las personas que me rodean. Además, mi
+                    capacidad de cooperación, adaptabilidad y flexibilidad al
+                    involucrarme en nuevos proyectos o trabajos contribuyen al éxito y
+                    al logro de metas de las empresas. Por otro lado, me encargaré de
+                    solucionar los conflictos que se presenten para no obstaculizar el
+                    rendimiento en el trabajo. También cuento con buena disposición
+                    para seguir creciendo académicamente y contribuir aún más al
+                    rendimiento de mi trabajo.
+                </p>
+            </div>
+        </div>
+    </section>
+
+<!-- SECCION educacion -->
+<section id="educacion" class="educacion">
+    <div class="contenido-seccion">
+        <h2>Educación</h2>
+        <div class="fila">
+            <div class="col izquierda">
+                <h3>Educación básica y media</h3>
+                <div class="item izq">
+                    <h4>Basica y Media</h4>
+                    <span class="casa">Colegio Alonso de Ercilla</span>
+                    <span class="fecha">2008 - 2020</span>
+                    <p><img src="./assets/img/1.png" alt="img1" id="img1"></p>
+                    <div class="conectori">
+                        <div class="circuloi"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col derecha">
+                <h3>Educación Superior</h3>
+                <div class="item der">
+                    <h4>Cursando Ingeniería informática</h4>
+                    <span class="casa">Duoc Uc</span>
+                    <span class="fecha">2023 - presente </span>
+                    <p><img src="./assets/img/2.png" alt="img2" id="img2"></p>
+                    <div class="conectord">
+                        <div class="circulod"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+    <!-- SECCION HABILIDADES -->
+    <section class="skills" id="skills">
+        <div class="contenido-seccion">
+            <h2>HABILIDADES</h2>
+            <div class="fila">
+                <!-- Technical HABILIDADES -->
+                <div class="col">
+                    <h3>Habilidades</h3>
+                    <div class="skill">
+                        <span>Javascript</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>75%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML & CSS</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>60%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Ingles</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>70%</span>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- Professional HABILIDADES -->
+                <div class="col">
+                    <h3>Habilidades blandas</h3>
+                    <div class="skill">
+                        <span>Empatia</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>80%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Creatividad</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>99%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Colaboración</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>90%</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="skill">
+                        <span>Manejo efectivo del tiempo</span>
+                        <div class="barra-skill">
+                            <div class="progreso">
+                                <span>85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+  <!-- SECCION PORTFOLIO -->
+<section id="portfolio" class="portfolio">
+    <div class="contenido-seccion">
+        <h2 id="tipor">PORTFOLIO</h2>
+        <div class="galeria">
+            <div class="proyecto">
+                <img id="img1" src="./assets/img/group.png" alt="">
+                <div class="overlay">
+                    <h3>GROUP ZERO</h3>
+                    <p>Proyecto creado para una galería de artistas que desean compartir su arte.</p>
+                </div>  
+                <button onclick="window.location.href='https://martinagonz.github.io/Prueba1/'">Abrir</button>
+            </div>    
+            <div class="proyecto">
+                <img id="img1" src="./assets/img/CLIMA1.png" alt="">
+                <div class="overlay">  
+                    <h3>CLIMA</h3>             
+                    <p>Proyecto que nos enseña cómo conectar una API a nuestros códigos.</p>
+                </div>
+                <button onclick="window.location.href='https://martinagonz.github.io/clima/'">Abrir</button>
+            </div>
+            <div class="proyecto">
+                <img id="img1" src="./assets/img/dinogame.png" alt="">
+                <div class="overlay">  
+                    <h3>DINO GAME</h3>
+                    <p>Proyecto donde se crea el conocido juego del dinosaurio en el navegador cuando no estamos conectados a Internet.</p>
+                </div>
+                <button onclick="window.location.href='https://martinagonz.github.io/dino/'">Abrir</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+   <!-- SECCION CONTACTO -->
+<section id="contacto" class="contacto">
+    <div class="contenido-seccion">
+        <h2>CONTACTO</h2>
+        <div class="fila">
+            <!-- Formulario -->
+            <div class="col">
+                <form id="miformulario">
+                    <label for="itnombre">Nombre</label> <br/>
+                    <input type="text" id="itnombre" class="campo" placeholder="Tu Nombre"/><br/>
+                    <div id="mensaje1" class="errores">Dame tu nombre</div>
+
+                    <label for="itmail">Correo</label> <br/>
+                    <input type="text" id="itmail" class="campo" placeholder="Dirección de correo"/><br/>
+                    <div id="mensaje2" class="errores">Dame un mail válido</div>
+
+                    <label for="itasunto">Tema</label> <br/>
+                    <input type="text" id="itasunto" class="campo" placeholder="Tema"/><br/>
+                    <div id="mensaje3" class="errores">Dime el motivo</div>
+
+
+                    <button type="submit" id="bEnviardatos" class="boton">
+                        Enviar Mensaje<i class="fa-solid fa-paper-plane"></i>
+                        <span class="overlay"></span>
+                    </button>
+                    
+                </form>
+            </div>
+            <!-- Mapa -->
+            <div class="col">
+                <img src="./assets/img/mapa.PNG" alt="">
+                <div class="info">
+                    <ul>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen"></i>
+                            Celular: 35751108
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-envelope"></i>
+                            Email: mart.gonzalezr@gmail.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="popup" class="popup">
+                <div class="popup-content">
+                    <span class="close-btn" onclick="closePopup()">&times;</span>
+                    <p>¡El mensaje ha sido enviado correctamente!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-- footer -->
+    <footer>
+        <a href="#inicio" class="arriba">
+            <i class="fa-solid fa-angles-up"></i>
+        </a>
+        <div class="redes">
+            <p class="fs-5 me-3 mb-0">Martina Gonzalez. &copy; Todos Los Derechos Reservados 2024</p>
+
+            <a href="https://github.com/martinagonz"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/martina-gonzalez-rios-932a27292?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fa-brands fa-linkedin-in"></i></a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+<script src="https://unpkg.com/typewriter-effect/dist/core.js"></script>
+    <script src="./assets/js/js.js"></script>
+</body>
+</html>
